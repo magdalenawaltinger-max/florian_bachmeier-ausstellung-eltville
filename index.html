@@ -30,6 +30,12 @@
         .image-placeholder { width: 100%; aspect-ratio: 16/9; background: #f0f0f0; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; border: 1px dashed #ccc; }
         .caption { font-style: italic; font-size: 0.9em; color: #666; margin-bottom: 15px; }
         .description { font-size: 1em; max-width: 700px; }
+.navbar {
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt den Umbruch */
+    justify-content: center; /* Optional: Zentrierung */
+    gap: 10px; /* Optional: Abstand zwischen den Links */
+}
         
         footer { padding: 40px 5%; background: #f9f9f9; font-size: 0.8em; }
     </style>
@@ -44,7 +50,7 @@
         Mediathek Eltville am Rhein</p>
 </header>
 
-<nav>
+<nav class="navbar">
     <a href="#foreword">Vorwort</a>
     <a href="#oesterreich">Österreich</a>
     <a href="#afghanistan">Afghanistan</a>
